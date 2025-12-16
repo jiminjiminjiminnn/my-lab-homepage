@@ -60,7 +60,7 @@ header {
 header img {
     display: block;
     width: 100%;
-    height: auto;
+    height:  auto;
 }
 
 /* Page Content */
@@ -85,11 +85,11 @@ header img {
     position: relative;
 }
 
-.hero:: before {
+.hero::before {
     content: '';
     position: absolute;
     top: 0;
-    left:  0;
+    left: 0;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
@@ -100,15 +100,15 @@ header img {
     z-index: 1;
 }
 
-. hero h2 {
-    font-size: 56px;
+.hero h2 {
+    font-size:  56px;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 20px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-. hero-subtitle {
+.hero-subtitle {
     font-size: 20px;
     font-weight: 300;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -127,8 +127,8 @@ section {
 }
 
 section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size:  32px;
+    margin-bottom:  20px;
     color: #2c3e50;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
@@ -145,12 +145,12 @@ section h4 {
     font-size: 20px;
     margin-top: 25px;
     margin-bottom:  10px;
-    color: #34495e;
+    color:  #34495e;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 section p {
-    font-size: 18px;
+    font-size:  18px;
     line-height:  1.8;
     color: #555;
     font-family: 'Times New Roman', Times, serif;
@@ -188,10 +188,10 @@ section li {
 .publication-list li {
     padding: 15px 0;
     margin-bottom: 10px;
-    line-height:  1.8;
+    line-height: 1.8;
 }
 
-.publication-list li::before {
+.publication-list li:: before {
     content: "■ ";
     color: #333;
     font-weight: bold;
@@ -208,15 +208,32 @@ section li {
     font-weight: bold;
 }
 
+/* Contact Info Styles */
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info p {
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+. contact-info p strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
 /* Member Card Styles */
 .member-card {
     display: flex;
     gap: 40px;
     align-items: flex-start;
-    background-color:  #f9f9f9;
+    background-color: #f9f9f9;
     padding: 30px;
     border-radius: 10px;
-    box-shadow:  0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     margin-top: 30px;
 }
 
@@ -229,13 +246,13 @@ section li {
 }
 
 .member-info h3 {
-    margin-top:  0;
+    margin-top: 0;
     font-size: 28px;
     color: #2c3e50;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-. member-title {
+.member-title {
     font-size: 18px;
     color: #0066cc;
     font-weight: 600;
@@ -244,14 +261,14 @@ section li {
 }
 
 .member-info ul {
-    list-style:  disc;
+    list-style: disc;
     padding-left: 20px;
     margin-bottom: 15px;
 }
 
 .member-info ul li {
     margin-bottom:  8px;
-    font-size: 16px;
+    font-size:  16px;
     color: #555;
 }
 
@@ -282,15 +299,15 @@ footer p {
         padding: 8px 12px;
     }
 
-    . hero h2 {
+    .hero h2 {
         font-size: 36px;
     }
 
-    .hero-subtitle {
+    . hero-subtitle {
         font-size: 16px;
     }
 
-    .member-card {
+    . member-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -299,5 +316,9 @@ footer p {
     .member-photo img {
         width: 150px;
         height: 150px;
+    }
+
+    .contact-info p {
+        font-size: 18px;
     }
 }
