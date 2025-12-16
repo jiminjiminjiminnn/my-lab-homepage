@@ -8,22 +8,17 @@
 </head>
 <body>
     <nav class="main-nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h1>Park Research Group</h1>
-            </div>
-            <ul>
-                <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
-                <li><a href="#" onclick="showPage('members')" class="nav-link">Members</a></li>
-                <li><a href="#" onclick="showPage('research')" class="nav-link">Research</a></li>
-                <li><a href="#" onclick="showPage('publications')" class="nav-link">Publications</a></li>
-                <li><a href="#" onclick="showPage('contact')" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#" onclick="showPage('home')" class="nav-link active">HOME</a></li>
+            <li><a href="#" onclick="showPage('research')" class="nav-link">RESEARCH</a></li>
+            <li><a href="#" onclick="showPage('members')" class="nav-link">TEAM</a></li>
+            <li><a href="#" onclick="showPage('publications')" class="nav-link">PUBLICATIONS</a></li>
+            <li><a href="#" onclick="showPage('contact')" class="nav-link">FACILITIES</a></li>
+        </ul>
     </nav>
 
     <header>
-        <img src="6.png" alt="iMLAB Header" style="width: 100%; height: auto; display: block;">
+        <img src="6.png" alt="iMLAB Header" style="width: 100%; height:  auto; display: block;">
     </header>
 
     <!-- Home Page -->
@@ -41,7 +36,7 @@
                 <div style="display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
                     <div style="flex: 1; min-width: 300px;">
                         <h3>Micro LED Transfer and MEMS Based on Fluidic Self-Assembly (FSA)</h3>
-                        <p>Our research focuses on the development of high-efficiency Fluidic Self-Assembly (FSA) techniques for the transfer of Red, Green, and Blue MicroLED chips. Key areas of investigation include:</p>
+                        <p>Our research focuses on the development of high-efficiency Fluidic Self-Assembly (FSA) techniques for the transfer of Red, Green, and Blue MicroLED chips.  Key areas of investigation include:</p>
                         <ul style="margin-top: 20px; padding-left: 20px;">
                             <li style="margin-bottom: 15px;"><strong>Efficient FSA using solder materials with different melting points:  </strong> This approach enables selective bonding and precise alignment of MicroLED chips by leveraging the thermal properties of diverse solder compositions.</li>
                             <li style="margin-bottom: 15px;"><strong>FSA with solders of uniform melting points: </strong> Investigating uniform-temperature processes for scalable and simplified MicroLED integration.</li>
@@ -64,7 +59,7 @@
                 <h2>최신 소식</h2>
                 <ul>
                     <li>2025-12-16: 홈페이지가 개설되었습니다.  </li>
-                    <!-- 다른 소식들을 이곳에 추가합니다.  -->
+                    <!-- 다른 소식들을 이곳에 추가합니다. -->
                 </ul>
             </section>
         </main>
@@ -74,7 +69,7 @@
     <div id="members" class="page-content">
         <main>
             <section>
-                <h2>Members</h2>
+                <h2>Team Members</h2>
                 
                 <div class="member-card">
                     <div class="member-photo">
@@ -163,8 +158,8 @@
     <div id="contact" class="page-content">
         <main>
             <section>
-                <h2>Contact</h2>
-                <p>연구실 연락처 및 위치 정보를 이곳에 추가하세요.</p>
+                <h2>Facilities</h2>
+                <p>연구실 시설 및 장비 정보를 이곳에 추가하세요.</p>
                 
                 <h3>Address</h3>
                 <p>주소 정보</p>
@@ -182,7 +177,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 iMLAB. All rights reserved. </p>
+        <p>&copy; 2025 iMLAB. All rights reserved.</p>
     </footer>
 
     <script>
@@ -190,7 +185,7 @@
             // 모든 페이지 숨기기
             const pages = document.querySelectorAll('.page-content');
             pages.forEach(page => {
-                page.classList. remove('active');
+                page.classList.remove('active');
             });
             
             // 선택한 페이지만 보이기
@@ -198,7 +193,7 @@
             
             // 네비게이션 active 클래스 업데이트
             const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
+            navLinks. forEach(link => {
                 link.classList.remove('active');
             });
             event.target.classList.add('active');
