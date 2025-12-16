@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     </nav>
 
     <header>
-        <img src="6.png" alt="iMLAB Header" style="width: 100%; height:   auto; display: block;">
+        <img src="6.png" alt="iMLAB Header" style="width: 100%; height:  auto; display: block;">
     </header>
 
     <!-- Home Page -->
@@ -29,12 +29,12 @@
                 <div style="display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
                     <div style="flex: 1; min-width: 300px;">
                         <h3>Micro LED Transfer and MEMS Based on Fluidic Self-Assembly (FSA)</h3>
-                        <p>Our research focuses on the development of high-efficiency Fluidic Self-Assembly (FSA) techniques for the transfer of Red, Green, and Blue MicroLED chips.   Key areas of investigation include:</p>
+                        <p>Our research focuses on the development of high-efficiency Fluidic Self-Assembly (FSA) techniques for the transfer of Red, Green, and Blue MicroLED chips.  Key areas of investigation include:</p>
                         <ul style="margin-top: 20px; padding-left: 20px;">
-                            <li style="margin-bottom: 15px;"><strong>Efficient FSA using solder materials with different melting points:   </strong> This approach enables selective bonding and precise alignment of MicroLED chips by leveraging the thermal properties of diverse solder compositions.</li>
-                            <li style="margin-bottom: 15px;"><strong>FSA with solders of uniform melting points:  </strong> Investigating uniform-temperature processes for scalable and simplified MicroLED integration.</li>
-                            <li style="margin-bottom: 15px;"><strong>Capillary force-assisted FSA in microfluidic channels fabricated using PDMS: </strong> Utilizing soft lithography to create microfluidic environments that facilitate chip assembly through capillary interactions.</li>
-                            <li style="margin-bottom:   15px;"><strong>Comparative analysis of FSA yield under varying pH conditions:</strong> Studying the influence of solution pH on assembly efficiency and yield optimization.</li>
+                            <li style="margin-bottom: 15px;"><strong>Efficient FSA using solder materials with different melting points:  </strong> This approach enables selective bonding and precise alignment of MicroLED chips by leveraging the thermal properties of diverse solder compositions.</li>
+                            <li style="margin-bottom: 15px;"><strong>FSA with solders of uniform melting points: </strong> Investigating uniform-temperature processes for scalable and simplified MicroLED integration.</li>
+                            <li style="margin-bottom: 15px;"><strong>Capillary force-assisted FSA in microfluidic channels fabricated using PDMS:</strong> Utilizing soft lithography to create microfluidic environments that facilitate chip assembly through capillary interactions.</li>
+                            <li style="margin-bottom:  15px;"><strong>Comparative analysis of FSA yield under varying pH conditions:</strong> Studying the influence of solution pH on assembly efficiency and yield optimization.</li>
                         </ul>
                         <p style="margin-top:  20px;">This research aims to advance scalable and reliable integration techniques for next-generation optoelectronic and MEMS devices.</p>
                     </div>
@@ -51,7 +51,7 @@
             <section id="news">
                 <h2>최신 소식</h2>
                 <ul>
-                    <li>2025-12-16: 홈페이지가 개설되었습니다.   </li>
+                    <li>2025-12-16: 홈페이지가 개설되었습니다. </li>
                     <!-- 다른 소식들을 이곳에 추가합니다.  -->
                 </ul>
             </section>
@@ -88,7 +88,7 @@
                         
                         <h4>Contact</h4>
                         <p>Email: parkjimin129@hanyang.ac.kr</p>
-                        <p>Office:  Advanced Convergence University, Intelligent Microsystems Laboratory(503)</p>
+                        <p>Office: Advanced Convergence University, Intelligent Microsystems Laboratory(503)</p>
                     </div>
                 </div>
             </section>
@@ -117,24 +117,19 @@
         <main>
             <section>
                 <h2>Publications</h2>
-                <p>연구실의 논문 및 출판물 목록을 이곳에 추가하세요.</p>
                 
-                <h3>2025</h3>
-                <ul>
-                    <li>논문 제목 1</li>
-                    <li>논문 제목 2</li>
+                <h3>2027</h3>
+                <ul class="publication-list">
+                    <!-- 2027년 논문 추가 예정 -->
                 </ul>
 
-                <h3>2024</h3>
-                <ul>
-                    <li>논문 제목 1</li>
-                    <li>논문 제목 2</li>
-                </ul>
-                
-                <h3>2023</h3>
-                <ul>
-                    <li>논문 제목 1</li>
-                    <li>논문 제목 2</li>
+                <h3>2026</h3>
+                <ul class="publication-list">
+                    <li>
+                        <span class="publication-item">
+                            Jimin Park, Daewon Lee*, "Fluidic Self-Assembly of Heterogeneous MicroLED Chips on Photoresist-Defined Selective Areas", <em>Advanced Materials Technologies</em> (2026)
+                        </span>
+                    </li>
                 </ul>
             </section>
         </main>
@@ -163,15 +158,15 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 iMLAB. All rights reserved.</p>
+        <p>&copy; 2025 iMLAB.  All rights reserved.</p>
     </footer>
 
     <script>
         function showPage(pageId) {
             // 모든 페이지 숨기기
-            const pages = document.querySelectorAll('.page-content');
+            const pages = document. querySelectorAll('.page-content');
             pages.forEach(page => {
-                page.classList.remove('active');
+                page.classList. remove('active');
             });
             
             // 선택한 페이지만 보이기
@@ -182,7 +177,7 @@
             navLinks. forEach(link => {
                 link.classList.remove('active');
             });
-            event.target.classList.add('active');
+            event.target. classList.add('active');
             
             // 페이지 맨 위로 스크롤
             window.scrollTo(0, 0);
