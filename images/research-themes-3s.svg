@@ -1,0 +1,75 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#0056b3">
+    Research Themes: Smart Scalable Systems (3S)
+  </text>
+  
+  <!-- Three main pillars -->
+  <!-- Smart Systems -->
+  <rect x="50" y="80" width="220" height="280" fill="#e3f2fd" stroke="#0056b3" stroke-width="2" rx="10"/>
+  <text x="160" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0056b3">
+    Smart Systems
+  </text>
+  <text x="160" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    AI/ML Integration
+  </text>
+  <text x="160" y="175" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Intelligent Automation
+  </text>
+  <text x="160" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Adaptive Systems
+  </text>
+  <text x="160" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Decision Support
+  </text>
+  
+  <!-- Scalable Systems -->
+  <rect x="290" y="80" width="220" height="280" fill="#fff3e0" stroke="#ff6f00" stroke-width="2" rx="10"/>
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#ff6f00">
+    Scalable Systems
+  </text>
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Distributed Computing
+  </text>
+  <text x="400" y="175" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Cloud Infrastructure
+  </text>
+  <text x="400" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Performance Optimization
+  </text>
+  <text x="400" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Load Balancing
+  </text>
+  
+  <!-- Secure Systems -->
+  <rect x="530" y="80" width="220" height="280" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2" rx="10"/>
+  <text x="640" y="110" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+    Secure Systems
+  </text>
+  <text x="640" y="145" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Data Protection
+  </text>
+  <text x="640" y="175" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Privacy Preservation
+  </text>
+  <text x="640" y="205" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Threat Detection
+  </text>
+  <text x="640" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#333">
+    Secure Communications
+  </text>
+  
+  <!-- Connecting arrows showing integration -->
+  <line x1="270" y1="220" x2="290" y2="220" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="510" y1="220" x2="530" y2="220" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
