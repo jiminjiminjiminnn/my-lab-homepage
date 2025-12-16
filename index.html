@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -23,13 +23,6 @@
 
     <!-- Home Page -->
     <div id="home" class="page-content active">
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Intelligent<br>Microsystems<br>Laboratory</h2>
-                <p class="hero-subtitle">지능형 마이크로시스템 연구실</p>
-            </div>
-        </section>
-
         <main>
             <section id="introduction">
                 <h2>연구실 소개</h2>
@@ -43,7 +36,7 @@
                             <li style="margin-bottom: 15px;"><strong>Capillary force-assisted FSA in microfluidic channels fabricated using PDMS:</strong> Utilizing soft lithography to create microfluidic environments that facilitate chip assembly through capillary interactions.</li>
                             <li style="margin-bottom:  15px;"><strong>Comparative analysis of FSA yield under varying pH conditions:</strong> Studying the influence of solution pH on assembly efficiency and yield optimization.</li>
                         </ul>
-                        <p style="margin-top:  20px;">This research aims to advance scalable and reliable integration techniques for next-generation optoelectronic and MEMS devices.</p>
+                        <p style="margin-top: 20px;">This research aims to advance scalable and reliable integration techniques for next-generation optoelectronic and MEMS devices.</p>
                     </div>
                     <div style="flex: 1; min-width: 300px;">
                         <img src="4.png" alt="FSA Research" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -73,7 +66,7 @@
                 
                 <div class="member-card">
                     <div class="member-photo">
-                        <img src="5.png" alt="Professor Photo" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        <img src="7.png" alt="Professor Photo" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
                     </div>
                     <div class="member-info">
                         <h3>Professor Name</h3>
@@ -107,7 +100,6 @@
         <main>
             <section>
                 <h2>Research</h2>
-                
                 
                 <h3>Smart Scalable Systems (3S)</h3>
                 <p>주요 연구 내용 설명</p>
@@ -159,7 +151,7 @@
         <main>
             <section>
                 <h2>Facilities</h2>
-                <p>연구실 시설 및 장비 정보를 이곳에 추가하세요.</p>
+                <p>연구실 시설 및 장비 정보를 이곳에 추가하세요. </p>
                 
                 <h3>Address</h3>
                 <p>주소 정보</p>
@@ -185,7 +177,7 @@
             // 모든 페이지 숨기기
             const pages = document.querySelectorAll('.page-content');
             pages.forEach(page => {
-                page.classList.remove('active');
+                page.classList. remove('active');
             });
             
             // 선택한 페이지만 보이기
@@ -193,10 +185,10 @@
             
             // 네비게이션 active 클래스 업데이트
             const navLinks = document.querySelectorAll('.nav-link');
-            navLinks. forEach(link => {
+            navLinks.forEach(link => {
                 link.classList.remove('active');
             });
-            event.target.classList.add('active');
+            event.target. classList.add('active');
             
             // 페이지 맨 위로 스크롤
             window.scrollTo(0, 0);
