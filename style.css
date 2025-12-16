@@ -12,8 +12,8 @@ body {
 
 /* Navigation - 전체 화면에 균등 배치 */
 .main-nav {
-    background-color:  white;
-    box-shadow:  0 2px 5px rgba(0,0,0,0.1);
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -21,22 +21,22 @@ body {
 
 .main-nav ul {
     list-style: none;
-    display:  flex;
-    justify-content:  space-around;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     max-width: 100%;
     margin: 0;
-    padding:  20px 0;
+    padding: 20px 0;
 }
 
-.main-nav ul li {
+. main-nav ul li {
     display: inline-block;
 }
 
 .main-nav ul li a {
     text-decoration: none;
     color: #333;
-    font-size:  16px;
+    font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
     padding: 10px 20px;
@@ -46,9 +46,9 @@ body {
 }
 
 .main-nav ul li a:hover,
-. main-nav ul li a.active {
+.main-nav ul li a.active {
     color: #0066cc;
-    border-bottom:  2px solid #0066cc;
+    border-bottom: 2px solid #0066cc;
 }
 
 /* Header - 네비게이션 아래에 배치 */
@@ -58,8 +58,8 @@ header {
 
 header img {
     display: block;
-    width:  100%;
-    height: auto;
+    width: 100%;
+    height:  auto;
 }
 
 /* Page Content */
@@ -67,14 +67,14 @@ header img {
     display: none;
 }
 
-. page-content.active {
+.page-content.active {
     display: block;
 }
 
 /* Hero Section */
 .hero {
     background: url('hero-bg.jpg') center/cover no-repeat;
-    background-color:  #2c3e50;
+    background-color: #2c3e50;
     height: 400px;
     display: flex;
     align-items: center;
@@ -84,11 +84,11 @@ header img {
     position: relative;
 }
 
-.hero::before {
+.hero:: before {
     content: '';
     position: absolute;
-    top:  0;
-    left: 0;
+    top: 0;
+    left:  0;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
@@ -100,7 +100,7 @@ header img {
 }
 
 . hero h2 {
-    font-size:  56px;
+    font-size: 56px;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 20px;
@@ -111,13 +111,12 @@ header img {
     font-weight: 300;
 }
 
-/* Main Content - Times 폰트 적용 */
+/* Main Content */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
     min-height: 60vh;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 section {
@@ -128,7 +127,6 @@ section h2 {
     font-size:  32px;
     margin-bottom: 20px;
     color: #2c3e50;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 section h3 {
@@ -136,30 +134,19 @@ section h3 {
     margin-top: 30px;
     margin-bottom: 15px;
     color: #34495e;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 section h4 {
     font-size: 20px;
     margin-top: 25px;
-    margin-bottom: 10px;
-    color: #34495e;
-    font-family:  'Times New Roman', Times, serif;
+    margin-bottom:  10px;
+    color:  #34495e;
 }
 
 section p {
     font-size: 18px;
     line-height:  1.8;
     color: #555;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-section ul {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-section li {
-    font-family: 'Times New Roman', Times, serif;
 }
 
 #research-themes {
@@ -194,14 +181,13 @@ section li {
 }
 
 .member-info {
-    flex:  1;
+    flex: 1;
 }
 
 .member-info h3 {
     margin-top: 0;
     font-size: 28px;
     color: #2c3e50;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .member-title {
@@ -209,19 +195,18 @@ section li {
     color: #0066cc;
     font-weight: 600;
     margin-bottom: 20px;
-    font-family:  'Times New Roman', Times, serif;
 }
 
 .member-info ul {
-    list-style: disc;
-    padding-left: 20px;
+    list-style:  disc;
+    padding-left:  20px;
     margin-bottom: 15px;
 }
 
 .member-info ul li {
     margin-bottom:  8px;
     font-size:  16px;
-    color: #555;
+    color:  #555;
 }
 
 /* Footer */
@@ -234,7 +219,7 @@ footer {
 }
 
 footer p {
-    font-size: 14px;
+    font-size:  14px;
 }
 
 /* Responsive */
@@ -245,7 +230,7 @@ footer p {
         padding: 15px 10px;
     }
 
-    .main-nav ul li a {
+    . main-nav ul li a {
         font-size: 14px;
         padding: 8px 12px;
     }
@@ -254,7 +239,7 @@ footer p {
         font-size: 36px;
     }
 
-    . hero-subtitle {
+    .hero-subtitle {
         font-size: 16px;
     }
 
