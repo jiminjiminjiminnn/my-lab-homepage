@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,11 @@
 <body>
     <nav class="main-nav">
         <ul>
-            <li><a href="#" onclick="showPage('home')" class="nav-link active">HOME</a></li>
-            <li><a href="#" onclick="showPage('research')" class="nav-link">RESEARCH</a></li>
-            <li><a href="#" onclick="showPage('members')" class="nav-link">TEAM</a></li>
-            <li><a href="#" onclick="showPage('publications')" class="nav-link">PUBLICATIONS</a></li>
-            <li><a href="#" onclick="showPage('contact')" class="nav-link">CONTACT</a></li>
+            <li><a href="javascript:void(0);" onclick="showPage('home')" class="nav-link active" id="nav-home">HOME</a></li>
+            <li><a href="javascript:void(0);" onclick="showPage('research')" class="nav-link" id="nav-research">RESEARCH</a></li>
+            <li><a href="javascript:void(0);" onclick="showPage('members')" class="nav-link" id="nav-members">TEAM</a></li>
+            <li><a href="javascript:void(0);" onclick="showPage('publications')" class="nav-link" id="nav-publications">PUBLICATIONS</a></li>
+            <li><a href="javascript:void(0);" onclick="showPage('contact')" class="nav-link" id="nav-contact">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -21,7 +21,6 @@
         <img src="6.png" alt="iMLAB Header" style="width: 100%; height:  auto; display: block;">
     </header>
 
-    <!-- Home Page -->
     <div id="home" class="page-content active">
         <main>
             <section id="introduction">
@@ -33,7 +32,7 @@
                         <ul style="margin-top: 20px; padding-left: 20px;">
                             <li style="margin-bottom: 15px;"><strong>Efficient FSA using solder materials with different melting points:  </strong> This approach enables selective bonding and precise alignment of MicroLED chips by leveraging the thermal properties of diverse solder compositions.</li>
                             <li style="margin-bottom: 15px;"><strong>FSA with solders of uniform melting points: </strong> Investigating uniform-temperature processes for scalable and simplified MicroLED integration.</li>
-                            <li style="margin-bottom: 15px;"><strong>Capillary force-assisted FSA in microfluidic channels fabricated using PDMS:</strong> Utilizing soft lithography to create microfluidic environments that facilitate chip assembly through capillary interactions.</li>
+                            <li style="margin-bottom: 15px;"><strong>Capillary force-assisted FSA in microfluidic channels fabricated using PDMS: </strong> Utilizing soft lithography to create microfluidic environments that facilitate chip assembly through capillary interactions.</li>
                             <li style="margin-bottom:  15px;"><strong>Comparative analysis of FSA yield under varying pH conditions:</strong> Studying the influence of solution pH on assembly efficiency and yield optimization.</li>
                         </ul>
                         <p style="margin-top:  20px;">This research aims to advance scalable and reliable integration techniques for next-generation optoelectronic and MEMS devices.</p>
@@ -52,13 +51,11 @@
                 <h2>최신 소식</h2>
                 <ul>
                     <li>2025-12-16: 홈페이지가 개설되었습니다. </li>
-                    <!-- 다른 소식들을 이곳에 추가합니다.  -->
                 </ul>
             </section>
         </main>
     </div>
 
-    <!-- Members Page -->
     <div id="members" class="page-content">
         <main>
             <section>
@@ -95,7 +92,6 @@
         </main>
     </div>
 
-    <!-- Research Page -->
     <div id="research" class="page-content">
         <main>
             <section>
@@ -112,7 +108,6 @@
         </main>
     </div>
 
-    <!-- Publications Page -->
     <div id="publications" class="page-content">
         <main>
             <section>
@@ -144,44 +139,43 @@
         </main>
     </div>
 
-    <!-- Contact Page -->
     <div id="contact" class="page-content">
         <main>
             <section>
                 <h2>Contact</h2>
                 
+                <div class="contact-map">
+                    <img src="8.png" alt="Location Map" style="max-width: 800px; width: 100%; height:  auto; display:  block; margin:  0 auto;">
+                </div>
+                
                 <div class="contact-info">
-                    <p><strong>E-mail:</strong> parkjimin129@hanyang.ac.kr</p>
+                    <p><strong>E-mail: </strong> parkjimin129@hanyang.ac.kr</p>
                     <p><strong>Phone:</strong> +82 10-2309-7116</p>
-                    <p><strong>Address:</strong> 503, College of Advanced Convergence, Hanyang University, 689 Haean-ro, Sangnok-gu, Ansan-si, Gyeonggi-do, Republic of Korea</p>
+                    <p><strong>Address: </strong> 503, College of Advanced Convergence, Hanyang University, 689 Haean-ro, Sangnok-gu, Ansan-si, Gyeonggi-do, Republic of Korea</p>
                 </div>
             </section>
         </main>
     </div>
 
     <footer>
-        <p>&copy; 2025 iMLAB. All rights reserved.</p>
+        <p>&copy; 2025 iMLAB. All rights reserved. </p>
     </footer>
 
     <script>
         function showPage(pageId) {
-            // 모든 페이지 숨기기
-            const pages = document.querySelectorAll('.page-content');
-            pages.forEach(page => {
-                page.classList.remove('active');
-            });
+            var pages = document.querySelectorAll('. page-content');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].classList. remove('active');
+            }
             
-            // 선택한 페이지만 보이기
             document.getElementById(pageId).classList.add('active');
             
-            // 네비게이션 active 클래스 업데이트
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-            event.target.classList.add('active');
+            var navLinks = document.querySelectorAll('.nav-link');
+            for (var i = 0; i < navLinks.length; i++) {
+                navLinks[i].classList.remove('active');
+            }
+            document.getElementById('nav-' + pageId).classList.add('active');
             
-            // 페이지 맨 위로 스크롤
             window.scrollTo(0, 0);
         }
     </script>
