@@ -1,11 +1,11 @@
 * {
     margin: 0;
-    padding:   0;
-    box-sizing:  border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -16,37 +16,37 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index:  1000;
 }
 
 .main-nav ul {
     list-style: none;
-    display:  flex;
-    justify-content:  space-around;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     max-width: 100%;
     margin: 0;
     padding: 20px 0;
 }
 
-.  main-nav ul li {
+. main-nav ul li {
     display: inline-block;
 }
 
-. main-nav ul li a {
+.main-nav ul li a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
-    font-weight:  500;
+    font-weight: 500;
     letter-spacing: 1px;
     padding: 10px 20px;
     transition: color 0.3s;
     cursor: pointer;
     display: block;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-.main-nav ul li a:hover,
+. main-nav ul li a:hover,
 .main-nav ul li a.active {
     color: #0066cc;
     border-bottom: 2px solid #0066cc;
@@ -85,11 +85,11 @@ header img {
     position: relative;
 }
 
-.hero::before {
+.hero:: before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left:  0;
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
@@ -101,17 +101,17 @@ header img {
 }
 
 . hero h2 {
-    font-size:  56px;
+    font-size: 56px;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-.hero-subtitle {
+. hero-subtitle {
     font-size: 20px;
     font-weight: 300;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Main Content */
@@ -120,7 +120,6 @@ main {
     margin: 0 auto;
     padding: 40px 20px;
     min-height: 60vh;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 section {
@@ -128,10 +127,10 @@ section {
 }
 
 section h2 {
-    font-size:  32px;
+    font-size: 32px;
     margin-bottom: 20px;
     color: #2c3e50;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 section h3 {
@@ -139,20 +138,20 @@ section h3 {
     margin-top: 30px;
     margin-bottom: 15px;
     color: #34495e;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 section h4 {
     font-size: 20px;
-    margin-top:  25px;
+    margin-top: 25px;
     margin-bottom:  10px;
-    color:  #34495e;
-    font-family: 'Times New Roman', Times, serif;
+    color: #34495e;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 section p {
     font-size: 18px;
-    line-height: 1.8;
+    line-height:  1.8;
     color: #555;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -189,11 +188,11 @@ section li {
 .publication-list li {
     padding: 15px 0;
     margin-bottom: 10px;
-    line-height: 1.8;
+    line-height:  1.8;
 }
 
 .publication-list li::before {
-    content:  "■ ";
+    content: "■ ";
     color: #333;
     font-weight: bold;
     margin-right: 10px;
@@ -204,7 +203,7 @@ section li {
     color: #333;
 }
 
-. publication-item em {
+.publication-item em {
     font-style: italic;
     font-weight: bold;
 }
@@ -214,10 +213,10 @@ section li {
     display: flex;
     gap: 40px;
     align-items: flex-start;
-    background-color: #f9f9f9;
+    background-color:  #f9f9f9;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow:  0 2px 10px rgba(0,0,0,0.1);
     margin-top: 30px;
 }
 
@@ -230,13 +229,13 @@ section li {
 }
 
 .member-info h3 {
-    margin-top: 0;
+    margin-top:  0;
     font-size: 28px;
     color: #2c3e50;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-.member-title {
+. member-title {
     font-size: 18px;
     color: #0066cc;
     font-weight: 600;
@@ -245,14 +244,14 @@ section li {
 }
 
 .member-info ul {
-    list-style: disc;
+    list-style:  disc;
     padding-left: 20px;
     margin-bottom: 15px;
 }
 
 .member-info ul li {
     margin-bottom:  8px;
-    font-size:  16px;
+    font-size: 16px;
     color: #555;
 }
 
@@ -267,7 +266,7 @@ footer {
 
 footer p {
     font-size: 14px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* Responsive */
@@ -287,11 +286,11 @@ footer p {
         font-size: 36px;
     }
 
-    . hero-subtitle {
+    .hero-subtitle {
         font-size: 16px;
     }
 
-    . member-card {
+    .member-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
