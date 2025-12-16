@@ -9,16 +9,16 @@
 <body>
     <nav class="main-nav">
         <ul>
-            <li><a href="#" onclick="showPage('home')" class="nav-link active">HOME</a></li>
-            <li><a href="#" onclick="showPage('research')" class="nav-link">RESEARCH</a></li>
-            <li><a href="#" onclick="showPage('members')" class="nav-link">TEAM</a></li>
-            <li><a href="#" onclick="showPage('publications')" class="nav-link">PUBLICATIONS</a></li>
-            <li><a href="#" onclick="showPage('contact')" class="nav-link">CONTACT</a></li>
+            <li><a href="#" onclick="showPage(event, 'home')" class="nav-link active">HOME</a></li>
+            <li><a href="#" onclick="showPage(event, 'research')" class="nav-link">RESEARCH</a></li>
+            <li><a href="#" onclick="showPage(event, 'members')" class="nav-link">TEAM</a></li>
+            <li><a href="#" onclick="showPage(event, 'publications')" class="nav-link">PUBLICATIONS</a></li>
+            <li><a href="#" onclick="showPage(event, 'contact')" class="nav-link">CONTACT</a></li>
         </ul>
     </nav>
 
     <header>
-        <img src="6.png" alt="iMLAB Header" style="width: 100%; height:  auto; display: block;">
+        <img src="6.png" alt="iMLAB Header" style="width: 100%; height:   auto; display: block;">
     </header>
 
     <!-- Home Page -->
@@ -29,14 +29,14 @@
                 <div style="display: flex; align-items: flex-start; gap: 40px; flex-wrap: wrap;">
                     <div style="flex: 1; min-width: 300px;">
                         <h3>Micro LED Transfer and MEMS Based on Fluidic Self-Assembly (FSA)</h3>
-                        <p>Our research focuses on the development of high-efficiency Fluidic Self-Assembly (FSA) techniques for the transfer of Red, Green, and Blue MicroLED chips. Key areas of investigation include:</p>
+                        <p>Our research focuses on the development of high-efficiency Fluidic Self-Assembly (FSA) techniques for the transfer of Red, Green, and Blue MicroLED chips. Key areas of investigation include: </p>
                         <ul style="margin-top: 20px; padding-left: 20px;">
-                            <li style="margin-bottom: 15px;"><strong>Efficient FSA using solder materials with different melting points:  </strong> This approach enables selective bonding and precise alignment of MicroLED chips by leveraging the thermal properties of diverse solder compositions.</li>
-                            <li style="margin-bottom: 15px;"><strong>FSA with solders of uniform melting points: </strong> Investigating uniform-temperature processes for scalable and simplified MicroLED integration.</li>
-                            <li style="margin-bottom: 15px;"><strong>Capillary force-assisted FSA in microfluidic channels fabricated using PDMS:</strong> Utilizing soft lithography to create microfluidic environments that facilitate chip assembly through capillary interactions.</li>
-                            <li style="margin-bottom:  15px;"><strong>Comparative analysis of FSA yield under varying pH conditions:</strong> Studying the influence of solution pH on assembly efficiency and yield optimization.</li>
+                            <li style="margin-bottom: 15px;"><strong>Efficient FSA using solder materials with different melting points:   </strong> This approach enables selective bonding and precise alignment of MicroLED chips by leveraging the thermal properties of diverse solder compositions.</li>
+                            <li style="margin-bottom: 15px;"><strong>FSA with solders of uniform melting points:  </strong> Investigating uniform-temperature processes for scalable and simplified MicroLED integration.</li>
+                            <li style="margin-bottom: 15px;"><strong>Capillary force-assisted FSA in microfluidic channels fabricated using PDMS: </strong> Utilizing soft lithography to create microfluidic environments that facilitate chip assembly through capillary interactions.</li>
+                            <li style="margin-bottom:   15px;"><strong>Comparative analysis of FSA yield under varying pH conditions:</strong> Studying the influence of solution pH on assembly efficiency and yield optimization.</li>
                         </ul>
-                        <p style="margin-top: 20px;">This research aims to advance scalable and reliable integration techniques for next-generation optoelectronic and MEMS devices.</p>
+                        <p style="margin-top:  20px;">This research aims to advance scalable and reliable integration techniques for next-generation optoelectronic and MEMS devices.</p>
                     </div>
                     <div style="flex: 1; min-width: 300px;">
                         <img src="4.png" alt="FSA Research" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -51,8 +51,8 @@
             <section id="news">
                 <h2>최신 소식</h2>
                 <ul>
-                    <li>2025-12-16:  홈페이지가 개설되었습니다. </li>
-                    <!-- 다른 소식들을 이곳에 추가합니다.  -->
+                    <li>2025-12-16:   홈페이지가 개설되었습니다.  </li>
+                    <!-- 다른 소식들을 이곳에 추가합니다.   -->
                 </ul>
             </section>
         </main>
@@ -69,7 +69,7 @@
                         <img src="7.png" alt="Professor Photo" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
                     </div>
                     <div class="member-info">
-                        <h3>Researcher Name</h3>
+                        <h3>Professor Name</h3>
                         <p class="member-title">Park Jimin</p>
                         
                         <h4>Education</h4>
@@ -151,7 +151,7 @@
                 <h2>Contact</h2>
                 
                 <div class="contact-map">
-                    <img src="8.png" alt="Location Map" style="max-width: 800px; width: 100%; height: auto; display: block; margin: 0 auto;">
+                    <img src="8.png" alt="Location Map" style="max-width: 800px; width: 100%; height: auto; display: block; margin:  0 auto;">
                 </div>
                 
                 <div class="contact-info">
@@ -164,11 +164,14 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 iMLAB. All rights reserved. </p>
+        <p>&copy; 2025 iMLAB. All rights reserved.  </p>
     </footer>
 
     <script>
-        function showPage(pageId) {
+        function showPage(event, pageId) {
+            // 기본 동작 방지
+            event.preventDefault();
+            
             // 모든 페이지 숨기기
             const pages = document.querySelectorAll('. page-content');
             pages. forEach(page => {
@@ -179,7 +182,7 @@
             document.getElementById(pageId).classList.add('active');
             
             // 네비게이션 active 클래스 업데이트
-            const navLinks = document.querySelectorAll('.nav-link');
+            const navLinks = document.querySelectorAll('. nav-link');
             navLinks.forEach(link => {
                 link.classList.remove('active');
             });
